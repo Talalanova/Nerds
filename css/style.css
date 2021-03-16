@@ -22,11 +22,11 @@
     --light-grey: #444444; 
     
   }
-
-  img {
-    height: auto;
+/*
+  img {    
     max-width: 100%;
   }
+*/
   .page {
     height: 100%;
   }
@@ -387,17 +387,20 @@ background-image: url(../img/slide/slide-3.png);
 }
 
 
-
 .desc-list-products {
-  list-style-image: url(../img/list-style.png);
-  margin-left: 0;
-  margin-top: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 .desc-list-products li::before {
  content: "";
+ background: url(../img/list-style.png) no-repeat center;
+ padding-left: 25px; 
+ margin-right: 7px;
 }
-
+.desc-item {
+  margin-bottom: 29px;
+}
 .desc-features {
   list-style: none;
   padding: 0;
@@ -417,9 +420,9 @@ background-image: url(../img/slide/slide-3.png);
 sup {
   font-weight: bold;
   font-size: 26px;
-  line-height: 40px;
-  
+  line-height: 40px;  
 }
+
 .desc-features-text {
   font-size: 16px;
   line-height: 18px;
@@ -435,13 +438,15 @@ sup {
 }
 
 .desc hr {
-  margin-top: 56px;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
 /*Clients*/
 
-.clients {
+.clients hr{
+  margin-top: 24px;
+  margin-bottom: 80px;
   
 }
 
@@ -450,8 +455,8 @@ sup {
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 30px 0;
+  margin: 0;
 }
 
 .clients-list li {
@@ -473,7 +478,7 @@ opacity: 10%;
 .clients-item:not(.clients-item:last-child)::after {
   content: url(../img/logos/vertical-separator.svg);
   margin-left: 45px;
-  margin-right: 45px;  
+  margin-right: 45px; 
 }
 
 /*Footer*/
@@ -500,10 +505,10 @@ opacity: 10%;
 }
 .footer-contacts {
   position: absolute;
-  top: 40px;
+  top: 52px;
   background-color: var(--basic-white);  
-  width: 308px;
-  height: 319px;
+  width: 319px;
+  height: 308px;
   text-align: center;  
 }
 
@@ -519,6 +524,7 @@ opacity: 10%;
   line-height: 18px;
   color: #666666;
   margin-top: 49px;
+  margin-bottom: 60px;
 }
 .contacts-title {
   font-weight: bold;
@@ -535,28 +541,30 @@ opacity: 10%;
   color: var(--basic-white);
   text-align: center;
   border: 1px solid var(--accent-color);
-  padding: 15px 15px;
+  padding: 15px 44px;
   display: inline-block;
   
 }
 
 .socials {
   list-style: none;
-  padding-left: 0px;
-  display: flex;
-  width: 260px;
-  justify-content: center;
-  margin-right: 12px;
+  padding: 0;
+  display: flex;    
+  margin-top: 60px;
   flex-direction: row;
+}
+
+.socials ul:last-child {
+  margin-right: 0;
 }
 
 .social-button {
   background-color: var(--grey);
   background-position: center;
   border-radius: 50%;
-  width: 81px;
-  height: 81px;
-  
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .social-button-vk {
