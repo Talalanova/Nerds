@@ -161,7 +161,9 @@
             <h2 class="visually-hidden">Контакты</h2>
             <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
             <p>191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="number">
               тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
           </div>
@@ -189,13 +191,18 @@
   <section class="feedback-modal">
     <h2>Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <label for="name">Ваше имя:</label>
-      <input class="field feadback-form-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
-      <label for="e-mail">Ваш e-mail:</label>
-      <input class="field feadback-form-input" id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
-      <label for="letter">Текст письма:</label>
-      <textarea class="field feedback-form-textarea" id="letter" name="letter"
-        placeholder="В свободной форме"></textarea>
+      <div class="name half-width">
+        <label for="name">Ваше имя:</label>
+        <input class="field feadback-form-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="email half-width">
+        <label for="e-mail">Ваш e-mail:</label>
+        <input class="field feadback-form-input" id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
+      </div>
+      <div class="letter-text">
+        <label for="letter">Текст письма:</label>
+        <textarea class="field feedback-form-textarea" id="letter" name="letter" placeholder="В свободной форме"></textarea>
+      </div>
       <button class="btn feedback-btn" type="submit">Отправить</button>
     </form>
     <button class="feedback-close" type="button">Закрыть</button>
