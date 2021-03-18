@@ -443,10 +443,9 @@ sup {
 }
 
 /*Clients*/
-
-.clients hr{
-  margin-top: 24px;
-  margin-bottom: 80px;  
+.clients hr {
+  padding: 0;
+  margin: 0;
 }
 .clients-item {
   position: relative;
@@ -464,6 +463,7 @@ sup {
   grid-template-columns: 1fr 1fr 1fr 1fr;  
   column-gap: 40px;
   padding: 0; 
+  margin: 0;
 }
 
 .clients-list li {
@@ -492,13 +492,7 @@ opacity: 0.1;
   right: 9px;
   top: 30px;
 }
-/*
-.clients-item:not(.clients-item:last-child)::after {
-  content: url(../img/logos/vertical-separator.svg);
-  margin-left: 45px;
-  margin-right: 45px; 
-}
-*/
+
 
 /*Footer*/
 
@@ -506,6 +500,7 @@ opacity: 0.1;
   margin: 0 auto; 
   position: relative;
   padding-bottom: 68px;
+  padding-top: 80px;
 }
 
 .map {
@@ -532,7 +527,8 @@ opacity: 0.1;
 }
 .footer-contacts {
   position: absolute;
-  top: 52px;
+  top: 130px;
+  left: 140px;
   background-color: var(--basic-white);  
   width: 319px;
   height: 308px;
