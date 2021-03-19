@@ -695,7 +695,7 @@ opacity: 0.1;
 }
 
 .feedback-form input,
-.feedbsck-form textarea {
+.feedback-form textarea {
   color: #444444;;
   opacity: 0.5;
 }
@@ -705,6 +705,10 @@ opacity: 0.1;
   opacity: 1;
 }
 
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border-color: #b4b9bb;
+}
 .form-container {
   display: flex;
   flex-wrap: wrap;
@@ -718,7 +722,6 @@ opacity: 0.1;
 
 .feedback-btn {
   width: 259px;
-  border: 0;
   margin-top: 50px;
 }
 
