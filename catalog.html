@@ -17,9 +17,11 @@
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <a class="logo" href="index.html">
-          <img src="img/logos/main-logo-nerds.svg" width="160" height="65" alt="Нёрдс">
-        </a>
+        <div class="logo-container">
+          <a class="logo" href="index.html">
+            <img src="img/logos/main-logo-nerds.svg" width="160" height="65" alt="Нёрдс">
+          </a>
+        </div>
         <ul class="site-nav">
           <li>
             <a href="index.html">Студия</a>
@@ -156,52 +158,52 @@
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <img src="img/products/product-sedona.jpg" width="359" height="578"
+          <img src="img/products/product-sedona.jpg" width="358" height="578"
             alt="Информационный сайт для туристов Седона">
           <div class="catalog-item-content">
-            <h3><a href="#">Sedona</a></h3>
+            <h3 class="catalog-item-title"><a href="#">Sedona</a></h3>
             <p>Информационный сайт<br>для туристов</p>
             <a class="btn catalog-btn" href="#">9900</a>
           </div>
         </li>
         <li class="catalog-item">
-          <img src="img/products/product-pink.jpg" width="359" height="578" alt="Приложение Pink App">
+          <img src="img/products/product-pink.jpg" width="358" height="578" alt="Приложение Pink App">
           <div class="catalog-item-content">
-            <h3><a href="#">Pink App</a></h3>
+            <h3 class="catalog-item-title"><a href="#">Pink App</a></h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="btn catalog-btn" href="#">9900</a>
           </div>
         </li>
         <li class="catalog-item">
-          <img src="img/products/product-borodinskii.jpg" width="359" height="578" alt="Барбершоп Borodinski">
+          <img src="img/products/product-borodinskii.jpg" width="358" height="578" alt="Барбершоп Borodinski">
           <div class="catalog-item-content">
-            <h3><a href="#">Borodinski</a></h3>
+            <h3 class="catalog-item-title"><a href="#">Borodinski</a></h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <a class="btn catalog-btn" href="#">9900</a>
           </div>
         </li>
         <li class="catalog-item">
-          <img src="img/products/product-mishka.jpg" width="359" height="578"
+          <img src="img/products/product-mishka.jpg" width="358" height="578"
             alt="Интернет-магазин вязаных игрушек Mishka>">
           <div class="catalog-item-content">
-            <h3><a href="#">Mishka</a></h3>
+            <h3 class="catalog-item-title"><a href="#">Mishka</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
             <a class="btn catalog-btn" href="#">9900</a>
           </div>
         </li>
         <li class="catalog-item">
-          <img src="img/products/product-aplus.jpg" width="359" height="578" alt="Курс повышения квалификации A Plus">
+          <img src="img/products/product-aplus.jpg" width="358" height="578" alt="Курс повышения квалификации A Plus">
           <div class="catalog-item-content">
-            <h3><a href="#">A Plus</a></h3>
+            <h3 class="catalog-item-title"><a href="#">A Plus</a></h3>
             <p>Лендинг курсов повышения квалификации</p>
             <a class="btn catalog-btn" href="#">9900</a>
           </div>
         </li>
         <li class="catalog-item">
-          <img src="img/products/product-kvast.jpg" width="359" height="578"
+          <img src="img/products/product-kvast.jpg" width="358" height="578"
             alt="Промо-сайт проиводителя крафтового Кваса">
           <div class="catalog-item-content">
-            <h3><a href="#">Кваст</a></h3>
+            <h3 class="catalog-item-title"><a href="#">Кваст</a></h3>
             <p>Промо-сайт производителя крафтового кваса</p>
             <a class="btn catalog-btn" href="#">9900</a>
           </div>
@@ -227,11 +229,8 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="map">
-      <img src="img/map.png" width="1440" height="416" alt="Санкт-Петербург,ул. Большая Конюшенная, д. 19/8">
-    </section>
-    <div class="container">
-      <section class="footer-contacts">
+    <section class="map">      
+      <div class="footer-contacts">
         <div class="footer-contacts-text">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
@@ -243,7 +242,9 @@
           </p>
         </div>
         <a class="btn contacts-btn" href="#">Напишите нам</a>
-      </section>
+      </div>
+    </section>
+    <div class="container">      
       <section class="footer-social">      
         <ul class="socials">
           <li class="social-button social-button-vk">
@@ -264,9 +265,9 @@
     </div>
   </footer>
   <section class="feedback-modal">
-    <h2>Напишите нам</h2>
+    
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="form-container">
+      <h2>Напишите нам</h2>
         <div class="name">
           <label for="name">Ваше имя:</label>
           <input class="field feadback-form-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
@@ -280,7 +281,7 @@
           <textarea class="field feedback-form-textarea" id="letter" name="letter" placeholder="В свободной форме" rows="5"></textarea>
         </div>
         <button class="btn feedback-btn" type="submit">Отправить</button>
-      </div>
+      
     </form>
     <button class="feedback-close" type="button" aria-label="Закрыть"></button></button>
   </section>
