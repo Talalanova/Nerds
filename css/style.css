@@ -122,7 +122,7 @@
     color: rgb(var(--black));
   }
 
-  .site-nav a:hover,
+  .site-nav a[href]:hover,
   .site-nav-cart:hover {
     color: var(--red);
   }
@@ -131,7 +131,7 @@
     opacity: 70%;
   }
 
-  .site-nav a:active,
+  .site-nav a[href]:active,
   .site-nav-cart:active,
   .logo:active {
     color: rgb(var(--black));
@@ -539,7 +539,8 @@ opacity: 0.1;
 }
 
 .map {
-  height: 416px;
+  height: 308px;
+  padding: 54px 0;
   width: 100%; 
   object-fit: cover;
   background-color: var(--gray-eeeeee);
@@ -583,8 +584,7 @@ opacity: 0.1;
   position: absolute;
   background-color: rgb(var(--white));
   width: 319px;
-  min-height: 308px;   
-  margin-top: 54px; 
+  min-height: 308px;    
 }
 
 .number a{
@@ -1144,25 +1144,37 @@ color: var(--gray-4d4d4d);
 
 
 .catalog-item {
-  position: relative;
+  position: relative;  
 }
+
+.catalog-item:hover img {
+  box-shadow: 0 6px 15px rgb(var(--black), 0.25);
+}
+.catalog-item::after {
+  content: "";
+  position: absolute;
+  height: 578px;
+  width: 358px;
+  top: 40px;
+  border: 1px solid var(--gray-f2f2f2);
+  border-top: none; 
+  border-radius: 0px 0px 5px 5px;
+}
+
 .catalog-item img {
   display: block;
   background-color: var(--gray-888888);
-  border: 1px solid var(--gray-f2f2f2);
-  border-radius: 0px 0px 5px 5px;
 }
 .catalog-item:hover .catalog-item-content {
   visibility: visible;
 }
 
-.catalog-item:hover img {
-  box-shadow: 0 6px 15px rgb(var(--black), 0.25);
+.catalog-item:hover::after {
   border: none;
 }
 .catalog-item-content {
   background-color:var(--gray-eeeeee);
-  width: 256px;
+  width: 255px;
   height: 231px;
   text-align: center;
   padding: 26px 52px 0px 52px;  
