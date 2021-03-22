@@ -583,8 +583,9 @@ opacity: 0.1;
 .footer-contacts {  
   position: absolute;
   background-color: rgb(var(--white));
-  width: 319px;
-  min-height: 308px;    
+  width: 219px;
+  height: 212px;
+  padding: 49px 50px 47px 50px;    
 }
 
 .number a{
@@ -604,8 +605,6 @@ opacity: 0.1;
   font-size: 16px;
   line-height: 18px;
   color: var(--gray-666666);
-  padding: 47px 50px 37px 50px; 
-
 }
 .contacts-title {
   font-weight: bold;
@@ -624,10 +623,10 @@ opacity: 0.1;
   color: rgb(var(--white));
   text-align: center;
   border: 1px solid var(--red);
-  padding: 15px 44px;
-  display: inline-block;
+  padding: 15px 35px;
+  display: block;
   vertical-align: top;
-  margin-left: 50px;
+  margin-top: 27px;
 }
 
 .socials {
@@ -1159,6 +1158,7 @@ color: var(--gray-4d4d4d);
   border: 1px solid var(--gray-f2f2f2);
   border-top: none; 
   border-radius: 0px 0px 5px 5px;
+  pointer-events: none;
 }
 
 .catalog-item img {
