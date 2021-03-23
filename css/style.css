@@ -255,6 +255,7 @@
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: top;
 }
 
 .slide-content {
@@ -303,7 +304,7 @@
 }
 
 .product-item {
-  /*padding-top: 146px;*/
+  vertical-align: top;
   display: inline-block;  
   width: 300px;
 }
@@ -413,7 +414,7 @@
   display: grid;
   grid-template-columns: 650px 360px;
   column-gap: 150px;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
 }
 
 .desc-head {
@@ -437,6 +438,7 @@
 .desc-text-left h3 {
   margin-top: 40px;
   margin-left: 0;
+  margin-bottom: 23px;
 }
 
 .desc-text-right {
@@ -455,7 +457,7 @@
  margin-right: 7px;
 }
 .desc-item {
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 }
 .desc-features {
   list-style: none;
@@ -466,6 +468,7 @@
   display: inline-block;
   width: min-content;
   margin-right: 18px;
+  vertical-align: top;
 }
 
 .desc-features-item:last-child {
@@ -493,10 +496,10 @@ sup {
   margin-bottom: 10px;
 }
 
-.desc hr {
+/* .desc hr {
   margin-top: 40px;
   margin-bottom: 0;
-}
+} */
 
 /*Clients*/
 .clients hr {
@@ -691,7 +694,7 @@ opacity: 0.1;
   display: none;
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 100px;
   margin-left: -480px;
   width: 960px;
   height: 590px;  
@@ -710,7 +713,7 @@ opacity: 0.1;
   line-height: 53px;
   font-weight: 700;
   color: rgb(var(--black));
-  margin-bottom: 38px;
+  margin-bottom: 34px;
   margin-top: 0;
   margin-right: 390px;
   padding: 0;
@@ -723,15 +726,16 @@ opacity: 0.1;
   border-radius: 3px;
   display: block;
   width: 340px;
-  height: 50px;
+  height: 45px;
   padding-left: 16px;
   margin-bottom: 34px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .feedback-form-textarea {
   resize: none;
   width: 740px;
-  height: 114px;
+  height: 94px;
+  padding-top: 16px;
 }
 
 .feedback-form input:invalid,
@@ -764,7 +768,7 @@ opacity: 0.1;
 
 .feedback-btn {
   width: 259px;
-  margin-top: 50px;
+  margin-top: 14px;
 
 }
 
@@ -792,6 +796,7 @@ opacity: 0.1;
 
 .catalog-btn {
   padding: 15px 72px;
+  margin-top: 17px;
 }
 .catalog-container {
   display: grid;
@@ -799,7 +804,7 @@ opacity: 0.1;
   align-content: start;
   width: 1160px;
   margin: 0 auto;
-  margin-top: 55px;
+  margin-top: 60px;
   column-gap: 140px;
 }
 
@@ -839,7 +844,8 @@ opacity: 0.1;
   width: 260px;
   padding: 0;
   margin-left: 0;
-  margin-top: 16px;
+  margin-top: 12px;
+  margin-bottom: 45px;
 }
 
 .filter-item {
@@ -849,13 +855,13 @@ opacity: 0.1;
 }
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 45px;
   margin-bottom: 54px;
 }
 
 .filter-item legend {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -947,6 +953,10 @@ color: var(--gray-4d4d4d);
 }
 
 .filter-option {
+  margin-bottom: 15px;
+}
+
+.filter-checkbox {
   margin-bottom: 17px;
 }
 .filter-input-checkbox + label::before {
@@ -1020,7 +1030,7 @@ color: var(--gray-4d4d4d);
   font-size: 16px;
   line-height: 20px;
   color: var(--gray-283136);
-  padding-left: 42px;
+  padding-left: 38px;
   padding-top: 3px;
   padding-bottom: 2px;
 }
@@ -1036,6 +1046,7 @@ color: var(--gray-4d4d4d);
   text-transform: uppercase;  
   padding: 17px;
   display: inline-block;
+  vertical-align: top;
   vertical-align: top;
   width: 260px;
   height: 50px;
@@ -1075,7 +1086,10 @@ color: var(--gray-4d4d4d);
   margin-bottom: 40px;
   padding: 0;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .sorting-list {
@@ -1089,7 +1103,7 @@ color: var(--gray-4d4d4d);
   margin-right: 25px;
 }
 
-.sorting-list-simbol li {
+.sorting-list-symbol li {
   margin-left: 18px;
 }
 .sorting a {
@@ -1113,7 +1127,7 @@ color: var(--gray-4d4d4d);
   color: rgba(var(--black));
   opacity: 1;
  }
-.sorting-list-simbol {
+.sorting-list-symbol {
   display: flex;
   justify-content: flex-end;
 }
@@ -1139,6 +1153,9 @@ color: var(--gray-4d4d4d);
 .catalog-item:hover::before,
 .catalog-item:focus-within::before { 
   opacity: 1;
+}
+.catalog-item-title {
+  margin: 0;
 }
 
 .catalog-item-title a{
@@ -1194,9 +1211,9 @@ color: var(--gray-4d4d4d);
 .catalog-item-content {
   background-color:var(--gray-eeeeee);
   width: 256px;
-  height: 231px;
+  height: 200px;
   text-align: center;
-  padding: 26px 52px 0px 52px;  
+  padding: 31px 52px 0px 52px;  
   position: absolute;
   bottom: 0px;
   display: block;
@@ -1204,6 +1221,13 @@ color: var(--gray-4d4d4d);
   opacity: 0;
 }
 
+.catalog-item-content p {
+  margin-top: 12px;
+  color: var(--gray-666666);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
