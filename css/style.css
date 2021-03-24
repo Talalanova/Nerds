@@ -1210,15 +1210,14 @@
   .catalog-item-content {
     background-color:var(--gray-eeeeee);
     width: 256px;
-    height: 200px;
     text-align: center;
-    padding: 31px 52px 0px 52px;  
+    padding: 31px 52px 44px 52px;  
     position: absolute;
     bottom: 0px;
     display: block;
     border-radius: 0px 0px 5px 5px;
     opacity: 0;
-    white-space: nowrap;
+
   }
 
   .catalog-item-content p {
